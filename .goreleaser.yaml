@@ -102,7 +102,7 @@ dockers:
     use: buildx
     image_templates:
       - ghcr.io/blinklabs-io/{{ .ProjectName }}:{{ .Version }}-arm64v8
-      - blinklabs/{{ .ProjectName }}:{{ .Version }}-arm64
+      - blinklabs/{{ .ProjectName }}:{{ .Version }}-arm64v8
     dockerfile: Dockerfile.goreleaser
     build_flag_templates:
       - "--pull"
