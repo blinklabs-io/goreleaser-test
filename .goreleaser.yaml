@@ -125,6 +125,8 @@ docker_manifests:
 
 nfpms:
   - formats: [apk, deb, rpm]
+    vendor: Blink Labs Software
+    homepage: https://blinklabs.io
     maintainer: Blink Labs Software <support@blinklabs.io>
 
 #npm:
