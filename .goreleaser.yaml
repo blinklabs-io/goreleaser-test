@@ -68,15 +68,15 @@ archives:
       - goos: windows
         formats: [zip]
 
-#brews:
-#  - homepage: "{{ .GitURL }}"
-#    description: ""
-#    repository:
-#      owner: blinklabs-io
-#      name: homebrew-cardano
-#      # token: GH personal auth token <---
-#      pull_request:
-#        enabled: true
+brews:
+  - homepage: "{{ .GitURL }}"
+    description: ""
+    repository:
+      owner: blinklabs-io
+      name: goreleaser-test
+      # token: GH personal auth token <---
+      pull_request:
+        enabled: true
 
 changelog:
   use: github-native
