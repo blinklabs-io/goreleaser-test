@@ -50,6 +50,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GPG_FINGERPRINT: ${{ steps.import_gpg.outputs.fingerprint }}
 
+      # Attest all files in ./dist/checksums.txt
+      - name: Run attestations
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-checksums: ./dist/checksums.txt
+
       # This updates the documentation on pkg.go.dev and the latest version available via the Go module proxy
       - name: Pull new module version
         uses: andrewslotin/go-proxy-pull-action@v1.3.0
