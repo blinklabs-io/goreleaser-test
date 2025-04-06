@@ -6,6 +6,7 @@ on:
       - "*"
 
 permissions:
+  attestations: write
   contents: write
   packages: write
 
