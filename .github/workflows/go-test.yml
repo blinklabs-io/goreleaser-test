@@ -1,9 +1,6 @@
 name: go-test
 
 on:
-  push:
-    tags:
-      - v*
   pull_request:
 
 permissions:
