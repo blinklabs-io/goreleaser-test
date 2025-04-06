@@ -76,11 +76,6 @@ brews:
       name: goreleaser-test
       branch: main
       # token: GH personal auth token <---
-      pull_request:
-        enabled: true
-        base:
-          owner: blinklabs-io
-          name: goreleaser-test
 
 changelog:
   use: github-native
