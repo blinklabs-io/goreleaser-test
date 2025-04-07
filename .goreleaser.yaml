@@ -70,7 +70,8 @@ archives:
 
 brews:
   - homepage: "{{ .GitURL }}"
-    description: ""
+    description: "Install {{ .ProjectName }} binaries"
+    directory: Formula
     repository:
       owner: blinklabs-io
       name: goreleaser-test
