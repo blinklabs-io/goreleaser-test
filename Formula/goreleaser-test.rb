@@ -5,20 +5,20 @@
 class GoreleaserTest < Formula
   desc "Install goreleaser-test binaries"
   homepage "https://github.com/blinklabs-io/goreleaser-test"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/blinklabs-io/goreleaser-test/releases/download/v0.2.0/goreleaser-test_0.2.0_darwin_x86_64.tar.gz"
-      sha256 "b97dbee701f61e67564deb93cfe45cd02f506b017ceb360184bfabdfeafd907b"
+      url "https://github.com/blinklabs-io/goreleaser-test/releases/download/v0.3.0/goreleaser-test_0.3.0_darwin_x86_64.tar.gz"
+      sha256 "b2fa1ae65c900173aeb0a44cd8587e567fa58d8776624b5ae4fe32effa846c16"
 
       def install
         bin.install "goreleaser-test"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/blinklabs-io/goreleaser-test/releases/download/v0.2.0/goreleaser-test_0.2.0_darwin_arm64.tar.gz"
-      sha256 "2b94c38eb742c9b892205b293e2ef821c796c35417296da0658b74c606a41e55"
+      url "https://github.com/blinklabs-io/goreleaser-test/releases/download/v0.3.0/goreleaser-test_0.3.0_darwin_arm64.tar.gz"
+      sha256 "e061b34dffb6c3a1148ac33f610804d24c04a4dc3bf285fe449b83cb64103701"
 
       def install
         bin.install "goreleaser-test"
@@ -29,8 +29,8 @@ class GoreleaserTest < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/blinklabs-io/goreleaser-test/releases/download/v0.2.0/goreleaser-test_0.2.0_linux_x86_64.tar.gz"
-        sha256 "ed2d6b84fd32323e996d91369ae58c55d86a1e3f7e67311b3b442ff3d0c8d276"
+        url "https://github.com/blinklabs-io/goreleaser-test/releases/download/v0.3.0/goreleaser-test_0.3.0_linux_x86_64.tar.gz"
+        sha256 "659e2e9a93ffd1fde510048067213aab9f8bd77b92d081fb48c3c8dde72a5b52"
 
         def install
           bin.install "goreleaser-test"
@@ -39,8 +39,8 @@ class GoreleaserTest < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/blinklabs-io/goreleaser-test/releases/download/v0.2.0/goreleaser-test_0.2.0_linux_arm64.tar.gz"
-        sha256 "976083c9ea0eb46817e2ebd70af0e06758ab6ce186b9ddfb5cb713ea63dfcacb"
+        url "https://github.com/blinklabs-io/goreleaser-test/releases/download/v0.3.0/goreleaser-test_0.3.0_linux_arm64.tar.gz"
+        sha256 "31006d55e72ca5c5beb8401a3f4e0252dc96f94a4d5728e735cb9b2c4f8c6ea9"
 
         def install
           bin.install "goreleaser-test"
